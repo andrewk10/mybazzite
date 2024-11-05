@@ -48,6 +48,7 @@ FROM ghcr.io/ublue-os/${SOURCE_IMAGE}${SOURCE_SUFFIX}:${SOURCE_TAG}
 ## make modifications desired in your image and install packages by modifying the build.sh script
 ## the following RUN directive does all the things required to run "build.sh" as recommended.
 
+COPY daemon.log /var/log/mullvad-vpn/daemon.log
 COPY build.sh /tmp/build.sh
 COPY MullvadVPN-2024.7_x86_64.rpm /tmp/MullvadVPN-2024.7_x86_64.rpm
 
