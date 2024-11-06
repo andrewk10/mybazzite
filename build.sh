@@ -14,7 +14,6 @@ RELEASE="$(rpm -E %fedora)"
 
 # To install Mullvad we need the appropriate opt directory in place.
 # /resources/mullvad-setup
-mkdir /opt/Mullvad\ VPN
 rpm-ostree install /tmp/MullvadVPN-2024.7_x86_64.rpm
 
 #### Example for enabling a System Unit File
