@@ -50,7 +50,7 @@ FROM ghcr.io/ublue-os/${SOURCE_IMAGE}${SOURCE_SUFFIX}:${SOURCE_TAG}
 
 COPY daemon.log /var/log/mullvad-vpn/daemon.log
 COPY build.sh /tmp/build.sh
-COPY MullvadVPN-2024.7_x86_64.rpm /tmp/MullvadVPN-2024.7_x86_64.rpm
+COPY MullvadVPN-2024.7_x86_64.rpm /home/MullvadVPN-2024.7_x86_64.rpm
 
 RUN mkdir -p /var/lib/alternatives && \
     /tmp/build.sh && \
