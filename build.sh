@@ -12,9 +12,7 @@ RELEASE="$(rpm -E %fedora)"
 # List of rpmfusion packages can be found here:
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
-# To install Mullvad we need the appropriate opt directory in place. 
 rpm-ostree install clamav lynis
 
 #### Example for enabling a System Unit File
-
 # systemctl enable podman.socket
