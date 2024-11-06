@@ -53,6 +53,7 @@ COPY build.sh /tmp/build.sh
 COPY MullvadVPN-2024.7_x86_64.rpm /tmp/MullvadVPN-2024.7_x86_64.rpm
 
 RUN mkdir -p /var/lib/alternatives && \
+    mkdir /opt && \
     cd /opt && \
     mkdir -p Mullvad\ VPN/resources/mullvad-setup && \
     /tmp/build.sh && \
